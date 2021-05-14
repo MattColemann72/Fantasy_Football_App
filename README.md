@@ -57,6 +57,32 @@ Talk about:
 - The architecture of the project.
 - The Risk Assesment undertaken.
 
+Minimum Viable Product Needs:
+- Formation
+-   Will store 2 formations (4-4-2/4-3-3) as basic ones to start with 
+- Players
+-   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
+-   Defenders will just have one position
+-   Midfielders will have one position
+-   Attackers will have 2 positions (central and wing - just to begin with so I can manage the change of formations)
+- User Name (Manager Name)
+-   Takes the Users name so that it can be used as the managers name.
+- Squad
+-   I need the squad to display the first 11 (XII) - As the minimum requirement I won't include the subs straight away.
+
+Minimum Viable Table Relationships:
+- Squad is going to consist of primarily foreign keys. 
+-   Managers names
+-   Players names
+-   Player Positions
+-     When assigning a player check to see if another player has already taken that position
+-   Formation
+
+Minimum Viable Visuals:
+- I want to be able to have the players in a position that will sort of resemble the formation. But for the minimum requirement, they will just be shown in a list format.
+-   I will be creating default layouts in the html files for the different formations - This should easily be expndable in the future using CSS3 to show formations rather than just a list.
+-   Also the name of the manager (user) will be displayed at the top of the squad page. For example "Matt's XII"
+
 
 Fully Functional CRUD Application
 
