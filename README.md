@@ -1,2 +1,104 @@
 # Fantasy_Football_App
 This is the readme.md file for my Fantasy Football webApp.
+
+CRUD App.
+
+The requirements of the project are as follows:
+
+A Trello board (or equivalent Kanban board tech) with full expansion
+on user stories, use cases and tasks needed to complete the project.
+It could also provide a record of any issues or risks that you faced
+creating your project.
+
+A relational database used to store data persistently for the
+project, this database needs to have at least 2 tables in it, to
+demonstrate your understanding, you are also required to model a
+relationship.
+
+Clear Documentation from a design phase describing the architecture
+you will use for you project as well as a detailed Risk Assessment.
+
+A functional CRUD application created in Python, following best
+practices and design principles, that meets the requirements set on
+your Kanban Board
+
+Fully designed test suites for the application you are creating, as
+well as automated tests for validation of the application. You must
+provide high test coverage in your backend and provide consistent
+reports and evidence to support a TDD approach.
+
+A functioning front-end website and integrated API's, using Flask.
+Code fully integrated into a Version Control System using the
+Feature-Branch model which will subsequently be built through a CI
+server and deployed to a cloud-based virtual machine.
+
+You should consider the concept of MVP (Minimum Viable Product) as you
+plan your project, completing all the requirements above before you add
+extra functionality that is not specified above.
+
+
+Trello Board
+
+Link Here.
+
+
+Relational Database
+
+Say what databases I will be using.
+MySQL
+Show ERD Image here.
+Talk about the minimum required and the minimum I will deliver.
+
+
+Documentation
+
+I will talk about what I intend the app to do and how here.
+Talk about:
+- The architecture of the project.
+- The Risk Assesment undertaken.
+
+
+Fully Functional CRUD Application
+
+The fully functional version of my CRUD app will be in the main branch in this GitHub Repository.
+I have set up a dev branch so I can ensure that everything is working before making any changes to the main branch.
+
+
+Testing
+
+I will be creating a test functions to ensure that everything is working exactly how it is supposed to and so that the testing is automatic.
+As well as this I will also be performing basic tests on the WebApp so that I can double check to see that everything is working right in the front-end view.
+
+
+What will I be using?
+
+Python, Flask, MySQL, PyMySQL, GCP, Jenkins etc...
+Kanban Board: Trello or an equivalent Kanban Board
+Database: GCP SQL Server or other Cloud Hosted managed Database.
+Programming language: Python
+Unit Testing with Python (Pytest)
+Integration Testing with Python (Selenium)
+Front-end: Flask (HTML)
+Version Control: Git
+CI Server: Jenkins
+Cloud server: GCP Compute Engine
+
+
+Minimum Viable Product
+
+With this being my first project, I am not expecting everything to go perfectly to plan and I understand that there will be times when I get stuck on certain areas. With this in mind I need to set the standard for the minimum viable product. This will be the absolute minimum that I intend to finish and have fully working by the time the project is due.
+I will be using the MoSCoW method of planning so that I can look at everything I must, probably should, could and would do - if time and skill forbid it. I will be using Trello, which I have posted the link to under the 'Trello' header in this ReadMe file. This will help me in many ways. Firstly, it will help me to get everything out of my head on what I potentially could do with it to make it an amazing product. This will allow me to acknowledge that I could do this in the future, but given time and my current ability, it's probably not a good idea right now. This could be something like adding login information to the application.
+I will dissect from the rest everything that I must compelete to be able to fullfill the breif. This includes:
+- Having at least two tables within the database which have relationships with one another.
+- Plan the tables relationships using ERD(s) 
+- Give the user the ability to Create, Read, Update and Delete (CRUD) data from the tables.
+- Plan for any potential risks (risk assessment)
+- Deploy the app through a VM
+- It has to be fully functional.
+
+Once the breif has been satisified, I can start to make it look more presentable and add more functions and tables to the project and database.
+
+
+Presentation
+
+Present my work using slides and demo the app?
