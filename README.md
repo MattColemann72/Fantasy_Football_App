@@ -39,7 +39,7 @@ extra functionality that is not specified above.
 
 Trello Board
 
-Link Here.
+https://trello.com/b/uFsnH9Cw/fantasy-football-python
 
 
 Relational Database
