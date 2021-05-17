@@ -44,6 +44,21 @@ https://trello.com/b/uFsnH9Cw/fantasy-football-python
 
 User Stories
 
+As a user, I want to be able to create my managers name so that I can see that I am choosing my own team and that it is personalised.
+As a user, I want to be able to choose a formation so that I can style my squad in my own way.
+As a user, I want to be able to choose players to go into my team in order to complete my team.
+As a user, I need to be able to change the players in my team incase one of them is injured or I have a change of heart.
+As a user, I want to delete my team after I have finished with it so that no-one can steal my team selection.
+
+Acceptance Criteria
+
+to be completed towards the end...
+eg.
+Given the user is on the landing page.
+When I enter a username and click the submit button.
+Then it takes me to the next page to select a formation, displaying my managers name.
+
+
 What does the user need to do with the minimum viable product?
 
 When the user lands on the webapp, they will be greeted "Welcome to the fantasy football app" and will be asked to enter their manager name. This can be anything they like including using symbols.
