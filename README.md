@@ -58,6 +58,12 @@ Relational Database
 Say what databases I will be using.
 MySQL
 Show ERD Image here.
+
+
+![(mvp)_ERD_002](https://user-images.githubusercontent.com/82821511/118515163-0a59ca00-b72d-11eb-97f9-638a48539e23.png)
+
+
+
 Talk about the minimum required and the minimum I will deliver.
 
 
@@ -73,20 +79,19 @@ Minimum Viable Product Needs:
 -   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
 - Players
 -   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
--   Defenders will just have one position
--   Midfielders will have one position
--   Attackers will have 2 positions (central and wing - just to begin with so I can manage the change of formations)
+-   All players will have 1 position
 - User Name (Manager Name)
 -   Takes the Users name so that it can be used as the managers name.
 - Squad
--   I need the squad to display the first 11 (XII) - As the minimum requirement I won't include the subs straight away.
+-   I need the squad to display the first 11 (XII) - As the minimum requirement I won't include the subs.
 
 Minimum Viable Table Relationships:
 - Squad is going to consist of primarily foreign keys. 
--   Managers names
--   Players names
+-   Manager names
+-   Player names
 -   Player Positions
--     When assigning a player check to see if another player has already taken that position
+-   Player club
+-   When assigning a player check to see if another player has already taken that position
 -   Formation
 
 Minimum Viable Visuals:
