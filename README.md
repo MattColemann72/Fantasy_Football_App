@@ -52,6 +52,30 @@ Once they have selected 11 players (using the formation as a guid - 1 goalkeeper
 Now that they have selected their squad, they can update it by changing players. They will also be able to update their managers name.
 If they aren't happy and want to start again, of course, they can delete their team too start again.
 
+Definition of Ready (DoR)
+
+- Landing page should welcome the user and ask them to enter their name
+- User can enter username and it be stored as their manager name
+- User can select formation(442 only)
+- User can select players
+- Players appear in a list. For example:
+gk - name
+lb - name
+cb - name
+cb - name
+rb - name
+lm - name
+cm - name
+cm - name
+rm - name
+str - name
+str - name
+- Change players from starting 11
+- Edit managers name
+- Delete team
+
+Once this list is complete, it will contain all CRUD features, as examples; creating the manager (name), showing the players on the screen, update the squads database and deleting the whole team.
+
 
 Relational Database
 
