@@ -73,6 +73,9 @@ Talk about:
 - The architecture of the project.
 - The Risk Assesment undertaken.
 
+[CRUDProject_RiskAssessment.xlsx](https://github.com/MattColemann72/Fantasy_Football_App/files/6495308/CRUDProject_RiskAssessment.xlsx)
+
+
 Minimum Viable Product Needs:
 Formation:
 -   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
