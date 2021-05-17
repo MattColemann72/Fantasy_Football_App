@@ -57,7 +57,6 @@ Relational Database
 
 Say what databases I will be using.
 MySQL
-Show ERD Image here.
 
 
 ![(mvp)_ERD_002](https://user-images.githubusercontent.com/82821511/118515163-0a59ca00-b72d-11eb-97f9-638a48539e23.png)
