@@ -74,14 +74,14 @@ Talk about:
 - The Risk Assesment undertaken.
 
 Minimum Viable Product Needs:
-- Formation
+- Formation:
 -   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
-- Players
+- Players:
 -   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
 -   All players will have 1 position
-- User Name (Manager Name)
+- User Name (Manager Name):
 -   Takes the Users name so that it can be used as the managers name.
-- Squad
+- Squad:
 -   I need the squad to display the first 11 (XII) - As the minimum requirement I won't include the subs.
 
 Minimum Viable Table Relationships:
