@@ -42,6 +42,17 @@ Trello Board
 https://trello.com/b/uFsnH9Cw/fantasy-football-python
 
 
+User Stories
+
+What does the user need to do with the minimum viable product?
+
+When the user lands on the webapp, they will be greeted "Welcome to the fantasy football app" and will be asked to enter their manager name. This can be anything they like including using symbols.
+Once they have inputted their manager name, they will be able to see the formation (4-4-2) selected for them as I have chosen for the minimum viable product (mvp). They will then have the chance to select players, using buttons on the screen to filter the players. For the mvp, I will just be filtering using positions, as there isn't going to be that many players to choose from at first.
+Once they have selected 11 players (using the formation as a guid - 1 goalkeeper, 4 defenders, 4 midfielders, 2 attackers) they will then be able to view their starting 11 in the 'Squads' page. 
+Now that they have selected their squad, they can update it by changing players. They will also be able to update their managers name.
+If they aren't happy and want to start again, of course, they can delete their team too start again.
+
+
 Relational Database
 
 Say what databases I will be using.
