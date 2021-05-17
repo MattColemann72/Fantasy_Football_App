@@ -70,7 +70,7 @@ Talk about:
 
 Minimum Viable Product Needs:
 - Formation
--   Will store 2 formations (4-4-2/4-3-3) as basic ones to start with 
+-   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
 - Players
 -   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
 -   Defenders will just have one position
