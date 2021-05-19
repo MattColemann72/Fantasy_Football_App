@@ -74,17 +74,17 @@ Definition of Ready (DoR)
 - User can select formation(442 only)
 - User can select players
 - Players appear in a list. For example:
-gk - name
-lb - name
-cb - name
-cb - name
-rb - name
-lm - name
-cm - name
-cm - name
-rm - name
-str - name
-str - name
+GK - name
+DEF - name
+DEF - name
+DEF - name
+DEF - name
+MID - name
+MID - name
+MID - name
+MID - name
+ATT - name
+ATT - name
 - Change players from starting 11
 - Edit managers name
 - Delete team
@@ -120,7 +120,7 @@ Formation:
 -   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
 Players:
 -   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
--   All players will have 1 position
+-   All players will have 1 position (GK,DEF,MID,ATT)
 User Name (Manager Name):
 -   Takes the Users name so that it can be used as the managers name.
 Squad:
