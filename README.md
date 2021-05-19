@@ -1,7 +1,6 @@
-# Fantasy_Football_App
-This is the readme.md file for my Fantasy Football webApp.
+# Football Team App
+This is the readme.md file for my Fantasy Football Team webApp.
 
-CRUD App.
 
 The requirements of the project are as follows:
 
@@ -50,7 +49,7 @@ As a user, I need to be able to change the name of the players in my team just i
 As a user, I need to be able to view my team so I can see how it looks.
 As a user, I want to delete my team after I have finished with it so that no-one can steal my team selection.
 
-Acceptance Criteria
+***Acceptance Criteria***
 
 to be completed towards the end...
 eg.
