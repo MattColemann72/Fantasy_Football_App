@@ -1,10 +1,12 @@
-from application.models import Positions
+from application.models import Positions, Player
 from application.forms import PositionForm
 from application import db
 
-#db.drop_all()
-db.create_all()
+db.drop_all()
 
+db.create_all()
+# Player.__table__.drop()
+# Positions.__table__.drop()
 
 posGK = Positions(position='GK') 
 posDEF = Positions(position='DEF')

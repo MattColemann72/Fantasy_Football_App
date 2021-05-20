@@ -1,4 +1,5 @@
 from itertools import count
+from operator import pos
 from flask import render_template, url_for, redirect, request
 from jinja2.utils import pformat
 from application import app, db
@@ -20,16 +21,20 @@ def index():
 @app.route('/add', methods=['POST', 'GET'])
 def add():
     pform = PlayerForm()
+    posform = PositionForm()
     #ppos = Positions(id = Player.id)
     if pform.validate_on_submit():
-        pname = Player(name = pform.name.data)
-        #ppos = Positions(id = Player.id)#
-        #db.session.add(ppos)#
+        pname = Player(name = pform.name.data, position_id = 1)
+#        ppos = Player(position = posform.position.data)
+        #get position_id from Player class
+        # playerpositionid = Player.position_id
+        # playerpositionid = 1
+        #db.session.add(ppos)
         db.session.add(pname)
         db.session.commit()
         #return redirect(url_for('index'))
-    posform = PositionForm.position
-    return render_template('add.html', title="Add A New Player", pform=pform)
+    #posform = PositionForm.position
+    return render_template('add.html', title="Add A New Player", pform=pform, posform=posform)
 
 
 @app.route('/squad', methods=['POST', 'GET'])
