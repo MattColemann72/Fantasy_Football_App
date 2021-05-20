@@ -20,10 +20,11 @@ def index():
 @app.route('/add', methods=['POST', 'GET'])
 def add():
     pform = PlayerForm()
+    #ppos = Positions(id = Player.id)
     if pform.validate_on_submit():
         pname = Player(name = pform.name.data)
-        ppos = Player.position_id = 1#
-        db.session.add(ppos)#
+        #ppos = Positions(id = Player.id)#
+        #db.session.add(ppos)#
         db.session.add(pname)
         db.session.commit()
         #return redirect(url_for('index'))
