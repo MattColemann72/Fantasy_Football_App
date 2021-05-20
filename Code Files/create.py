@@ -8,11 +8,13 @@ db.create_all()
 # Player.__table__.drop()
 # Positions.__table__.drop()
 
+posDefault = Positions(position='Position')
 posGK = Positions(position='GK') 
 posDEF = Positions(position='DEF')
 posMID = Positions(position='MID')
 posATT = Positions(position='ATT')
 
+db.session.add(posDefault)
 db.session.add(posGK)
 db.session.add(posDEF)
 db.session.add(posMID)

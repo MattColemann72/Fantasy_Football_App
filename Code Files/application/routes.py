@@ -22,18 +22,13 @@ def index():
 def add():
     pform = PlayerForm()
     posform = PositionForm()
-    #ppos = Positions(id = Player.id)
+    pos_id = 1
+
     if pform.validate_on_submit():
-        pname = Player(name = pform.name.data, position_id = 1)
-#        ppos = Player(position = posform.position.data)
-        #get position_id from Player class
-        # playerpositionid = Player.position_id
-        # playerpositionid = 1
-        #db.session.add(ppos)
+        pname = Player( name = pform.name.data, position_id = pos_id )
         db.session.add(pname)
         db.session.commit()
-        #return redirect(url_for('index'))
-    #posform = PositionForm.position
+
     return render_template('add.html', title="Add A New Player", pform=pform, posform=posform)
 
 
@@ -49,20 +44,19 @@ def update(id):
     posselect = posform.position
     playerpos = Positions.position
     pname = Player.query.get(id)
+    posid = Player
+
+    print(Positions.query.all())
+
     if pform.validate_on_submit():
         pname.name = pform.name.data
+        Player.position_id = Player.id
+
         db.session.commit()
-        #return redirect(url_for('index'))
     elif request.method == 'GET':
         pform.name.data = pname.name
-    # if posform.validate_on_submit():
-    #     for i in posform.query.all():
 
-
-
-    #playerpos.query()
-
-    return render_template('update.html', title='Update A Player', pform=pform, posselect=posselect, posform=posform, playerpos=playerpos)
+    return render_template('update.html', title='Update A Player', pform=pform, posselect=posselect, posform=posform, playerpos=playerpos, posid=posid)
 
 
 @app.route('/delete/<int:id>')

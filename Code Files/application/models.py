@@ -21,8 +21,5 @@ class Player(db.Model):
 #     player_id = db.Column(db.Integer, db.ForeignKey('player.id'), nullable=False)
 
 
-    
-
-
-class Squad(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+# class Squad(db.Model):
+#     id = db.Column(db.Integer, primary_key=True)

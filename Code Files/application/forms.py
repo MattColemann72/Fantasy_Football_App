@@ -18,8 +18,8 @@ class PlayerForm(FlaskForm):
 class PositionForm(FlaskForm):
     position = SelectField("Select Position", 
         choices=[
-            ("Goalkeeper", "GK"), ("Defender", "DEF"), 
-            ("Midfielder", "MID"), ("Attacker", "ATT")
+            ("Goalkeeper", "Goalkeeper"), ("Defender", "Defender"), 
+            ("Midfielder", "Midfielder"), ("Attacker", "Attacker")
         ]
     )
     submit = SubmitField('Save Position')
