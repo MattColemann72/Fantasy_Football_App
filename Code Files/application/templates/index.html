@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+    <div>
+        {% for player in pname %}
+            <br>
+            <div>
+                {% if count == 0 %}
+                    <p>You need to select more players!</p>
+                {% endif %}
+            </div>
+            <div style="float:left;">
+            {{ player.name }}
+            </div>
+            <br>
+            <div style="float:left; margin:5;">
+            <form action='{{ url_for('update', id=player.id) }}'>
+            <input type=submit value="Edit">
+            </form>
+            </div>
+            <div style="float:left; margin:5;">
+            <form action='{{ url_for('delete', id=player.id) }}'>
+            <input type=submit value="Delete">
+            </form>
+            </div>
+            <br><br>
+        {% endfor %}
+    <div>
+{% endblock body_content %}
