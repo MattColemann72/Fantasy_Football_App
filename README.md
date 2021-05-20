@@ -1,7 +1,6 @@
-# Fantasy_Football_App
-This is the readme.md file for my Fantasy Football webApp.
+# Football Team App
+This is the readme.md file for my Fantasy Football Team webApp.
 
-CRUD App.
 
 The requirements of the project are as follows:
 
@@ -44,13 +43,51 @@ https://trello.com/b/uFsnH9Cw/fantasy-football-python
 
 User Stories
 
+As a user, I want to be able to create my managers name so that I can see that I am choosing my own team and that it is personalised.
+As a user, I want to be able to create players to go into my team in order to complete my team.
+As a user, I need to be able to change the name of the players in my team just incase I need to swap them out of my team.
+As a user, I need to be able to view my team so I can see how it looks.
+As a user, I want to delete my team after I have finished with it so that no-one can steal my team selection.
+
+***Acceptance Criteria***
+
+to be completed towards the end...
+eg.
+Given the user is on the landing page.
+When I enter a username and click the submit button.
+Then it takes me to the next page to select a formation, displaying my managers name.
+
+
 What does the user need to do with the minimum viable product?
 
 When the user lands on the webapp, they will be greeted "Welcome to the fantasy football app" and will be asked to enter their manager name. This can be anything they like including using symbols.
-Once they have inputted their manager name, they will be able to see the formation (4-4-2) selected for them as I have chosen for the minimum viable product (mvp). They will then have the chance to select players, using buttons on the screen to filter the players. For the mvp, I will just be filtering using positions, as there isn't going to be that many players to choose from at first.
-Once they have selected 11 players (using the formation as a guid - 1 goalkeeper, 4 defenders, 4 midfielders, 2 attackers) they will then be able to view their starting 11 in the 'Squads' page. 
-Now that they have selected their squad, they can update it by changing players. They will also be able to update their managers name.
-If they aren't happy and want to start again, of course, they can delete their team too start again.
+Once they have inputted their manager name, they will be able to see the formation (4-4-2) selected for them as I have chosen that for the minimum viable product (mvp). They will then have the chance to create players to insert into their team.
+Once they have selected/ created 11 players they will then be able to view their starting 11 in the 'Squads' page. 
+Now that they have selected their squad, they can update it by editing the players and their managers name.
+If they aren't happy and want to start again, they can delete their team too start again.
+
+Definition of Ready (DoR)
+
+- Landing page should welcome the user and ask them to enter their name
+- User can enter username and it be stored as their manager name
+- User can create players
+- Players appear in a list. For example:
+GK - name
+DEF - name
+DEF - name
+DEF - name
+DEF - name
+MID - name
+MID - name
+MID - name
+MID - name
+ATT - name
+ATT - name
+- Edit players in starting 11
+- Edit managers name
+- Delete team
+
+Once this list is complete, it will contain all CRUD features, as examples; creating the manager (name), showing the players on the screen, update the players table and deleting the whole team.
 
 
 Relational Database
@@ -61,9 +98,8 @@ MySQL
 
 ![(mvp)_ERD_002](https://user-images.githubusercontent.com/82821511/118515163-0a59ca00-b72d-11eb-97f9-638a48539e23.png)
 
-
-
-Talk about the minimum required and the minimum I will deliver.
+***SHOW PREVIOUS***
+***CREATE NEW ONE WITH UPDATED TABLES - WHY***
 
 
 Documentation
@@ -73,12 +109,15 @@ Talk about:
 - The architecture of the project.
 - The Risk Assesment undertaken.
 
+[CRUDProject_RiskAssessment.xlsx](https://github.com/MattColemann72/Fantasy_Football_App/files/6495308/CRUDProject_RiskAssessment.xlsx)
+
+
 Minimum Viable Product Needs:
 Formation:
 -   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
 Players:
 -   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
--   All players will have 1 position
+-   All players will have 1 position (GK,DEF,MID,ATT)
 User Name (Manager Name):
 -   Takes the Users name so that it can be used as the managers name.
 Squad:
