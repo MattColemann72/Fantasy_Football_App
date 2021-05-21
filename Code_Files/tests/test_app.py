@@ -1,5 +1,6 @@
 # Import the necessary modules
 #from flask.wrappers import Response
+from flask.wrappers import Response
 from flask_testing import TestCase
 from flask import url_for
 
@@ -42,6 +43,14 @@ class TestView(TestBase):
         response = self.client.post(url_for('add'), data={"name":"Test Player Name"})
         self.assertIn(b"Test Player Name", response.data)
 
+    # def test_update_player_name(self):
+    #     response = self.client.post(url_for('update', id=3))
+    #     self.assertIn(b"Test Player Name", response.data)
+
+    # def test_update_player_position(self):
+    #     response = self.client.post(url_for('update', id=2))
+    #     self.assertIn(b"Change Player Name", response.data)
+    
     def test_delete_player(self):
         response = self.client.get(url_for("delete", id=1))
         num_players = Player.query.count()
