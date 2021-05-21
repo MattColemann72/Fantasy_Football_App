@@ -10,12 +10,12 @@ from application.forms import PlayerForm, PositionForm
 @app.route('/', methods=['POST', 'GET'])
 def index():
     pname = Player.query.all()
-    count = 0
-    if Player.query.count() < 1:
-        count = 0
-    else:
-        count = 1
-    return render_template('index.html', title="Football Squad", pname=pname, count=count)
+    # count = 0
+    # if Player.query.count() < 1:
+    #     count = 0
+    # else:
+    #     count = 1
+    return render_template('index.html', title="Football Squad", pname=pname)
 
 
 @app.route('/add', methods=['POST', 'GET'])
