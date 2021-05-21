@@ -2,7 +2,7 @@ from flask.app import Flask
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms import validators
-from wtforms.validators import DataRequired#, ValidationError
+from wtforms.validators import DataRequired
 
 # from application.models import Player
 
@@ -12,8 +12,6 @@ class PlayerForm(FlaskForm):
     position_id = StringField('Postion' )
     submit = SubmitField('Save Name')
     
-
-
 
 class PositionForm(FlaskForm):
     position = SelectField("Select Position", 
