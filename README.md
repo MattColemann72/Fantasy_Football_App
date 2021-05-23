@@ -101,13 +101,12 @@ Once this list is complete, it will contain all CRUD features, as examples; crea
 
 In this project I will be using a MySQL on GCP as well as the sqlite for local usage. sqlite will be helpful for initial testing to get my app functional. It is essential that I move onto GCP using the MySQL database there so that I can then move my app online and link it with a virtual machine and then with Jenkins. 
 
-![ERD-V1](/Misc_Files/images/ERD_1.jpg)
+![ERD-V1](/Misc_Files/ERD/erd1.jpg)
 
-![ERD-V2](/Misc_Files/images/ERD_2.jpg)
+![ERD-V2](/Misc_Files/ERD/erd2.jpg)
 
-![ERD-V3](/Misc_Files/images/ERD_3.jpg)
+![ERD-V3](/Misc_Files/ERD/erd3.jpg)
 
-<!-- ![(mvp)_ERD_002](https://user-images.githubusercontent.com/82821511/118515163-0a59ca00-b72d-11eb-97f9-638a48539e23.png) -->
 
 As you can see from the above images, I have created 3 very different ERDs. The reason for this is because I created the first one around a week before I started this project and I overestimated my abiliy a by good ammount. I also added practically everything I thought could be a good idea for a fully functioning Fantasy Football application. This was a great idea at the time, but the closer I got to starting the project I was realising more and more that I wasn't be realistic at all.
 
@@ -125,7 +124,7 @@ Talk about:
 - The architecture of the project.
 - The Risk Assesment undertaken.
 
-![ProjectArchitexture](/Mic_Files/ERD/ci-pipeline.jpg)
+![CI-Pipeline](/Mic_Files/ERD/ci-pipeline.jpg)
 
 ![CRUDProject_RiskAssessment](/Misc_Files/Risk_Management/updated-risk-assessment.jpg)
 
@@ -166,6 +165,8 @@ For the integration testing I have checked to see if the user can go from one we
 - CI Server: Jenkins
 - Cloud server: GCP Compute Engine
 
+## Presentation
 
 
+[Presentation file can be found here](/Misc_Files/Presentation/CRUD-WebApp-Presentation.pptx)
 
