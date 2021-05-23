@@ -101,11 +101,11 @@ Once this list is complete, it will contain all CRUD features, as examples; crea
 
 In this project I will be using a MySQL on GCP as well as the sqlite for local usage. sqlite will be helpful for initial testing to get my app functional. It is essential that I move onto GCP using the MySQL database there so that I can then move my app online and link it with a virtual machine and then with Jenkins. 
 
-![ERD-V1](/Misc_Files/erd/erd1.jpg)
+![ERD-V1](/Misc_Files/erd/erd1.png)
 
-![ERD-V2](/Misc_Files/erd/erd2.jpg)
+![ERD-V2](/Misc_Files/erd/erd2.png)
 
-![ERD-V3](/Misc_Files/erd/erd3.jpg)
+![ERD-V3](/Misc_Files/erd/erd3.png)
 
 
 As you can see from the above images, I have created 3 very different ERDs. The reason for this is because I created the first one around a week before I started this project and I overestimated my abiliy a by good ammount. I also added practically everything I thought could be a good idea for a fully functioning Fantasy Football application. This was a great idea at the time, but the closer I got to starting the project I was realising more and more that I wasn't be realistic at all.
