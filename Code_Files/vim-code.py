@@ -1,9 +1,9 @@
-from flask-testing import LiveServerTestCase
+from flask_testing import LiveServerTestCase
 from selenium import webdriver
 from urllib.request import urlopen
 from flask import url_for
 
-from application import app.db
+from application import app, db
 from application.models import Player
 
 class TestBase(LiveServerTestCase):
@@ -39,3 +39,10 @@ class TestBase(LiveServerTestCase):
     def test_server_is_up_and_running(self):
         response = urlopen("http://localhost:5050")
         self.assertEqual(response.code, 200)
+
+class TestViews(TestBase):
+    def test_navigation(self):
+        self.driver.find_element_by_xpath("/html/body/a[2]").click()
+        print(url_for("add"))
+        print(self.driver.current_url)
+        self.assertIn(url_for("add"), self.driver.current_url)

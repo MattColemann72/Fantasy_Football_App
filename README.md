@@ -1,44 +1,6 @@
 # Football Player App
 _This is my readme file for my football player webApp._
 
-
-The requirements of the project are as follows:
-
-_A Trello board (or equivalent Kanban board tech) with full expansion
-on user stories, use cases and tasks needed to complete the project.
-It could also provide a record of any issues or risks that you faced
-creating your project._
-
-_A relational database used to store data persistently for the
-project, this database needs to have at least 2 tables in it, to
-demonstrate your understanding, you are also required to model a
-relationship._
-
-_Clear Documentation from a design phase describing the architecture
-you will use for you project as well as a detailed Risk Assessment._
-
-_A functional CRUD application created in Python, following best
-practices and design principles, that meets the requirements set on
-your Kanban Board._
-
-_Fully designed test suites for the application you are creating, as
-well as automated tests for validation of the application. You must
-provide high test coverage in your backend and provide consistent
-reports and evidence to support a TDD approach._
-
-_A functioning front-end website and integrated API's, using Flask.
-Code fully integrated into a Version Control System using the
-Feature-Branch model which will subsequently be built through a CI
-server and deployed to a cloud-based virtual machine._
-
-_You should consider the concept of MVP (Minimum Viable Product) as you
-plan your project, completing all the requirements above before you add
-extra functionality that is not specified above._
-
-<br>
-
-<br>
-
 ## Minimum Viable Product
 
 With this being my first project, I am not expecting everything to go perfectly to plan and I understand that there will be times when I get stuck on certain areas. With this in mind I need to set the standard for the minimum viable product. This will be the absolute minimum that I intend to finish and have fully working by the time the project is due.
@@ -163,54 +125,39 @@ Talk about:
 - The architecture of the project.
 - The Risk Assesment undertaken.
 
-![ProjectArchitexture](/Mic_Files/images/project-architecture.jpg)
+![ProjectArchitexture](/Mic_Files/ERD/ci-pipeline.jpg)
 
-[CRUDProject_RiskAssessment](/Misc_Files/images/risk_assessment1.jpg)
-
-
-Minimum Viable Product Needs:
-Formation:
--   Will store 1 formation (4-4-2) - Isn't an essential part of the project to have more 
-Players:
--   Will add players to the database from a variety of clubs to choose from (minimum of 2 per position (taking into account formations))
--   All players will have 1 position (GK,DEF,MID,ATT)
-User Name (Manager Name):
--   Takes the Users name so that it can be used as the managers name.
-Squad:
--   I need the squad to display the first 11 (XII) - As the minimum requirement I won't include the subs.
-
-Minimum Viable Table Relationships:
-- Squad is going to consist of primarily foreign keys. 
--   Manager names
--   Player names
--   Player Positions
--   Player club
--   When assigning a player check to see if another player has already taken that position
--   Formation
-
-Minimum Viable Visuals:
-- I want to be able to have the players in a position that will sort of resemble the formation. But for the minimum requirement, they will just be shown in a list format.
--   I will be creating default layouts in the html files for the different formations - This should easily be expndable in the future using CSS3 to show formations rather than just a list.
--   Also the name of the manager (user) will be displayed at the top of the squad page. For example "Matt's XII"
+![CRUDProject_RiskAssessment](/Misc_Files/Risk_Management/updated-risk-assessment.jpg)
 
 
-Fully Functional CRUD Application
+## Fully Functional CRUD Application
 
 The fully functional version of my CRUD app will be in the main branch in this GitHub Repository.
 I have set up a dev branch so I can ensure that everything is working before making any changes to the main branch.
 
 
-Testing
+## Testing
 
-I will be creating a test functions to ensure that everything is working exactly how it is supposed to and so that the testing is automatic.
-As well as this I will also be performing basic tests on the WebApp so that I can double check to see that everything is working right in the front-end view.
+I have completed some unit testing as well as 1 integration test. 
 
 
-What will I be using?
+![Unit Testing Results](/Misc_Files/Testing/Unit_Testing(67pc).jpg)
 
-- Python, Flask, MySQL, PyMySQL, GCP, Jenkins etc...
-- Kanban Board: Trello or an equivalent Kanban Board
-- Database: GCP SQL Server or other Cloud Hosted managed Database.
+![Integration Test File](/Misc_Files/Testing/Integration_testing_test-file.jpg)
+
+![Integration Test Results](/Misc_Files/Testing/Integration_testing.jpg)
+
+
+As you can see from the images above, I have completed some unit testing receiving an 87% completion rate. I have tested to make sure that the user can add a player to the database. I then test to ensure that the user can see a player they have created in the database on the home page. Finally I have tested to check that the user can delete a player. Going forward to increase my completion rate, I need to test to ensure that the user can update the players name and also to see if they can change the players position.
+
+
+For the integration testing I have checked to see if the user can go from one webpage to another. I have checked this by using the XPath of the link to the add player page. As you can see from the images above, this test passed, along with the basic test of ensuring that the server is up and running.
+
+
+## What have I used?
+
+- Trello
+- Database: GCP MySQL Server.
 - Programming language: Python
 - Unit Testing with Python (Pytest)
 - Integration Testing with Python (Selenium)
