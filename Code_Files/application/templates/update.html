@@ -11,8 +11,29 @@
         {% endif %}
         {{ pform.submit }}
         <br>
-        {{ posform.position }}
+        <!-- {{ posform.hidden_tag() }} -->
+        
+        <!-- {{ posform.position }}
+        {% if posform.position.errors %}
+            {% for error in posform.position.errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
         {{ posform.submit }}
+        {{ posid }} -->
+        
+        
+        {{ posform.position }}
+        {% if posform.position.errors %}
+            {% for error in posform.position.errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+        {{ posform.submit }}
+
+
+        <!-- {{ posform.position }}
+        {{ posform.submit }} -->
         <br>
     </form>
 {% endblock body_content %}

@@ -3,17 +3,10 @@
     <div>
         {% for player in pname %}
             <br>
-            <!-- <div>
-                {% if count == 0 %}
-                    <p>You need to select more players!</p>
-                {% endif %}
-            </div> -->
             <div style="float:left;">
             {{ player.player_id }}
             {{ player.name }}
-            <!-- {% for player in ppos %}
-                {{ player.position }}
-            {% endfor %} -->
+            {{ player.position_id }}
             </div>
             <br>
             <div style="float:left; margin:5;">

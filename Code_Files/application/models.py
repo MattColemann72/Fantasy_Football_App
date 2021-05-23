@@ -14,12 +14,3 @@ class Player(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30))
     position_id = db.Column(db.Integer, db.ForeignKey('positions.id'))
-
-# class Clubs(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     club = db.Column(db.String(30))
-#     player_id = db.Column(db.Integer, db.ForeignKey('player.id'), nullable=False)
-
-
-# class Squad(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)

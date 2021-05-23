@@ -21,3 +21,12 @@ class PositionForm(FlaskForm):
         ]
     )
     submit = SubmitField('Save Position')
+
+# class PositionForm(FlaskForm):
+#     position = SelectField("Select Position", 
+#         choices=[
+#             ("Goalkeeper", "Goalkeeper"), ("Defender", "Defender"), 
+#             ("Midfielder", "Midfielder"), ("Attacker", "Attacker")
+#         ]
+#     )
+#     submit = SubmitField('Save Position')

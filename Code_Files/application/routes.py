@@ -7,6 +7,7 @@ from application.models import Player, Positions
 from application.forms import PlayerForm, PositionForm
 
 
+
 @app.route('/', methods=['POST', 'GET'])
 def index():
     pname = Player.query.all()
@@ -44,19 +45,38 @@ def update(id):
     posselect = posform.position
     playerpos = Positions.position
     pname = Player.query.get(id)
-    posid = Player
+    posid = Player.position_id
+    position = Positions.query.get(id)
+    posid = Positions.id
 
     print(Positions.query.all())
 
     if pform.validate_on_submit():
         pname.name = pform.name.data
-        Player.position_id = Player.id
+        # position.player = posform.position.data
+        # #Player.position_id = posform.position.data
+        # position.position = posform.position.data
 
+        # print(position)
+
+        # if position.position == "Goalkeeper":
+        #     position = 0
+        # elif position.position == "Defender":
+        #     position = 1
+        # elif position.position == "Midfielder":
+        #     position = 2
+        # elif position.position == "Attacker":
+        #     position = 3
+        
+        #print(posid)
+        #db.session.add(posid)
         db.session.commit()
+    
+
     elif request.method == 'GET':
         pform.name.data = pname.name
 
-    return render_template('update.html', title='Update A Player', pform=pform, posselect=posselect, posform=posform, playerpos=playerpos, posid=posid)
+    return render_template('update.html', title='Update A Player', pform=pform, posselect=posselect, posform=posform, playerpos=playerpos, posid=posid, position=position)
 
 
 @app.route('/delete/<int:id>')
