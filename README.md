@@ -150,7 +150,7 @@ I have completed some unit testing as well as 1 integration test.
 As you can see from the images above, I have completed some unit testing receiving an 87% completion rate. I have tested to make sure that the user can add a player to the database. I then test to ensure that the user can see a player they have created in the database on the home page. Finally I have tested to check that the user can delete a player. Going forward to increase my completion rate, I need to test to ensure that the user can update the players name and also to see if they can change the players position.
 
 
-For the integration testing I have checked to see if the user can go from one webpage to another. I have checked this by using the XPath of the link to the add player page. As you can see from the images above, this test passed, along with the basic test of ensuring that the server is up and running.
+For the integration testing I have checked to see if the user can go from one webpage to another. I have checked this by using the XPath of the link to the add player page. As you can see from the images above, this test passed, along with the basic test of ensuring that the server is up and running and making sure the user can add a player to the database.
 
 
 ## What have I used?
